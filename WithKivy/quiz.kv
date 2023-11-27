@@ -1,0 +1,34 @@
+<MyGrid>:
+    question: question
+    answer: answer
+    score: score
+    do: do
+    result: result
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        Label:
+            id: question
+            text: "The Questions will show here"
+        
+        TextInput:
+            id: answer
+            multiline:False
+
+        GridLayout:
+            cols:2
+
+            Label:
+                id: score
+                text: "0"
+            
+            Button:
+                id: do
+                text:"Start"
+                on_press: root.btn()
+        
+        Label:
+            id: result
+            text: "Are you ready!"

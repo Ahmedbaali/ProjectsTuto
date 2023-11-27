@@ -11,8 +11,10 @@ from kivy.properties import ObjectProperty
 class MyGrid(Widget):
     name = ObjectProperty(None)
     email = ObjectProperty(None)
+    answer = ObjectProperty(None)
 
     def btn(self):
+        self.answer.text = "Clicked!!"
         print("Name:", self.name.text, "\nemail:", self.email.text)
         self.name.text = ""
         self.email.text = ""

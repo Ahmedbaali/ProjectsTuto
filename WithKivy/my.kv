@@ -2,11 +2,13 @@
 
     name: name
     email: email
+    answer: answer
 
     GridLayout:
         cols:1
-        size: root.width - 200, root.height -200
-        pos: 100, 100
+        #size: root.width - 200, root.height -200
+        #pos: 100, 100
+        size: root.width, root.height
 
         GridLayout:
             cols:2
@@ -28,3 +30,7 @@
         Button:
             text:"Submit"
             on_press: root.btn()
+
+        Label:
+            id: answer
+            text: "."
